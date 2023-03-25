@@ -12,4 +12,5 @@ echo export PATH="$PATH:~/.junest/usr/bin_wrappers" >> ~/.bashrc
 echo junest proot >> ~/.bashrc
 
 wget https://raw.githubusercontent.com/Indithem/linux/main/junest.sh
-< junest.sh
+junest proot
+exit
