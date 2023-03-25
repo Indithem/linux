@@ -7,6 +7,9 @@ export PATH=~/.local/share/junest/bin:$PATH
 export PATH="$PATH:~/.junest/usr/bin_wrappers"
 junest setup
 ## Junet export
+echo export PATH=~/.local/share/junest/bin:$PATH >> ~/.bashrc
+echo export PATH="$PATH:~/.junest/usr/bin_wrappers" >> ~/.bashrc
 echo junest proot >> ~/.bashrc
 
-
+wget https://raw.githubusercontent.com/Indithem/linux/main/junest.sh
+junest proot
