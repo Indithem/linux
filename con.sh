@@ -13,6 +13,7 @@ sudo pacman -S fish
 ## Junet export
 echo export PATH=~/.local/share/junest/bin:$PATH >> ~/.bashrc
 echo export PATH="$PATH:~/.junest/usr/bin_wrappers" >> ~/.bashrc
+echo junest proot >> ~/.bashrc
 echo fish >> ~/.bashrc
 
 echo Restart your terminal
