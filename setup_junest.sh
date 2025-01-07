@@ -33,10 +33,10 @@ junest makepkg -si
 
 fi
 
-alias jj='junest fish'
+alias jf='junest fish'
 
 
 echo "Now you can run 'junest' to enter proot"
-echo "Use alias 'jj' to open fish directly."
+echo "Use alias 'jf' to open fish directly."
 
 
