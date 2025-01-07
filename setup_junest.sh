@@ -20,12 +20,18 @@ export JUNEST_HOME=$JUNEST_HOME
 export PATH=~/.junest/usr/bin_wrappers:$JUNEST_SRC_DIR/junest-$JUNEST_VERSION/bin:$PATH
 
 if [ -z "$( ls -A $JUNEST_HOME )" ]; then
+
 # create new root dir
 junest setup
-fi
+cp ./pacman.conf $JUNEST_HOME/etc/pacman.conf
 
 # install packages for user
-junest sudo pacman -Syu --noconfirm neovim fish zip git
+junest sudo pacman -Syu --noconfirm neovim fish zip git base-devel
+junest git clone https://aur.archlinux.org/paru-bin.git $JUNEST_SRC_DIR/paru
+cd $JUNEST_SRC_DIR/paru
+junest makepkg -si
+
+fi
 
 alias jj='junest fish'
 
