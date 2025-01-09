@@ -12,5 +12,9 @@ JUNEST\_HOME is same as described in junest's docs.
 
 Edit further system installation such as packages installed in the script.
 
+# Dependencies
+- wget
+- unzip
+
 # Todo
 -[] Save and load from images/snapshots.
